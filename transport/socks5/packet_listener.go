@@ -34,6 +34,30 @@ const clientUDPBufferSize = 16 * 1024
 // udpPool stores the byte slices used for storing packets.
 var udpPool = slicepool.MakePool(clientUDPBufferSize)
 
+type packetListener struct {
+	endpoint transport.PacketEndpoint
+}
+
+var _ transport.PacketListener = (*packetListener)(nil)
+
+func NewPacketListener(endpoint transport.PacketEndpoint) (transport.PacketListener, error) {
+	if endpoint == nil {
+		return nil, errors.New("argument endpoint must not be nil")
+	}
+
+	return &packetListener{endpoint: endpoint}, nil
+}
+
+// ListenPacket implements transport.PacketListener.
+func (c *packetListener) ListenPacket(ctx context.Context) (net.PacketConn, error) {
+	proxyConn, err := c.endpoint.ConnectPacket(ctx)
+	if err != nil {
+		return nil, fmt.Errorf("could not connect to endpoint: %w", err)
+	}
+	conn := packetConn{pc: proxyConn}
+	return &conn, nil
+}
+
 type packetConn struct {
 	pc net.Conn
 	sc io.Closer
