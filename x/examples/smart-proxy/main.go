@@ -26,10 +26,10 @@ import (
 	"os/signal"
 	"time"
 
-	"github.com/Jigsaw-Code/outline-sdk/transport"
-	"github.com/Jigsaw-Code/outline-sdk/x/config"
-	"github.com/Jigsaw-Code/outline-sdk/x/httpproxy"
-	"github.com/Jigsaw-Code/outline-sdk/x/smart"
+	"github.com/ericlindev/outline-sdk/transport"
+	"github.com/ericlindev/outline-sdk/x/config"
+	"github.com/ericlindev/outline-sdk/x/httpproxy"
+	"github.com/ericlindev/outline-sdk/x/smart"
 )
 
 var debugLog log.Logger = *log.New(io.Discard, "", 0)

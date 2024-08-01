@@ -21,8 +21,8 @@ import (
 	"io"
 	"net"
 
-	"github.com/Jigsaw-Code/outline-sdk/internal/slicepool"
-	"github.com/Jigsaw-Code/outline-sdk/transport"
+	"github.com/ericlindev/outline-sdk/internal/slicepool"
+	"github.com/ericlindev/outline-sdk/transport"
 	"github.com/shadowsocks/go-shadowsocks2/socks"
 )
 

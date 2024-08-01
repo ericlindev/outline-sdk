@@ -27,7 +27,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Jigsaw-Code/outline-sdk/x/config"
+	"github.com/ericlindev/outline-sdk/x/config"
 )
 
 var debugLog log.Logger = *log.New(io.Discard, "", 0)

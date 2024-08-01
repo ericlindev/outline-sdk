@@ -26,9 +26,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Jigsaw-Code/outline-sdk/dns"
-	"github.com/Jigsaw-Code/outline-sdk/transport"
-	"github.com/Jigsaw-Code/outline-sdk/x/config"
+	"github.com/ericlindev/outline-sdk/dns"
+	"github.com/ericlindev/outline-sdk/transport"
+	"github.com/ericlindev/outline-sdk/x/config"
 )
 
 // To test one strategy:

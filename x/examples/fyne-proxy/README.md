@@ -4,8 +4,8 @@ This folder has a graphical application that runs a local proxy given a address 
 It uses [Fyne](https://fyne.io/) for the UI.
 
 
-<img width="231" alt="image" src="https://github.com/Jigsaw-Code/outline-sdk/assets/113565/5d985cb6-3df7-4781-88b0-29f62b22d6d9">
-<img width="231" alt="image" src="https://github.com/Jigsaw-Code/outline-sdk/assets/113565/396390ab-4c47-4da9-a544-68645b28e45a">
+<img width="231" alt="image" src="https://github.com/ericlindev/outline-sdk/assets/113565/5d985cb6-3df7-4781-88b0-29f62b22d6d9">
+<img width="231" alt="image" src="https://github.com/ericlindev/outline-sdk/assets/113565/396390ab-4c47-4da9-a544-68645b28e45a">
 
 You can configure your system to use the proxy, as per the instructions below:
 
@@ -27,7 +27,7 @@ We don't recommend using 0.0.0.0, since that may open up your machine to the out
 You can run the app without explicitly cloning the repository with:
 
 ```sh
-go run github.com/Jigsaw-Code/outline-sdk/x/examples/fyne-proxy@latest
+go run github.com/ericlindev/outline-sdk/x/examples/fyne-proxy@latest
 ```
 
 To run the local version while developing, from the `fyne-proxy` directory:

@@ -26,7 +26,7 @@ import (
 	"path"
 	"time"
 
-	"github.com/Jigsaw-Code/outline-sdk/x/psiphon"
+	"github.com/ericlindev/outline-sdk/x/psiphon"
 )
 
 var debugLog *log.Logger = log.New(io.Discard, "", 0)

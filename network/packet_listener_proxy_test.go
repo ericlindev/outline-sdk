@@ -18,7 +18,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Jigsaw-Code/outline-sdk/transport"
+	"github.com/ericlindev/outline-sdk/transport"
 	"github.com/stretchr/testify/require"
 )
 

@@ -20,7 +20,7 @@ import (
 	"os"
 	"os/signal"
 
-	"github.com/Jigsaw-Code/outline-sdk/x/mobileproxy"
+	"github.com/ericlindev/outline-sdk/x/mobileproxy"
 )
 
 func main() {

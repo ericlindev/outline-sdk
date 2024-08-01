@@ -1,11 +1,11 @@
-module github.com/Jigsaw-Code/outline-sdk/x/examples/fyne-tools
+module github.com/ericlindev/outline-sdk/x/examples/fyne-tools
 
 go 1.20
 
 require (
 	fyne.io/fyne/v2 v2.4.3
-	github.com/Jigsaw-Code/outline-sdk v0.0.12
-	github.com/Jigsaw-Code/outline-sdk/x v0.0.0-20240117212231-233d1898e1db
+	github.com/ericlindev/outline-sdk v0.0.12
+	github.com/ericlindev/outline-sdk/x v0.0.0-20240117212231-233d1898e1db
 )
 
 require (

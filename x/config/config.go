@@ -21,8 +21,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/Jigsaw-Code/outline-sdk/transport"
-	"github.com/Jigsaw-Code/outline-sdk/transport/tlsfrag"
+	"github.com/ericlindev/outline-sdk/transport"
+	"github.com/ericlindev/outline-sdk/transport/tlsfrag"
 )
 
 // ConfigToDialer enables the creation of stream and packet dialers based on a config. The config is

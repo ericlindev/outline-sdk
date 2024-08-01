@@ -1,10 +1,10 @@
-module github.com/Jigsaw-Code/outline-sdk/x/examples/outline-connectivity-app
+module github.com/ericlindev/outline-sdk/x/examples/outline-connectivity-app
 
 go 1.20
 
 require (
-	github.com/Jigsaw-Code/outline-sdk v0.0.6
-	github.com/Jigsaw-Code/outline-sdk/x v0.0.0-20230907224418-a5564f78bcef
+	github.com/ericlindev/outline-sdk v0.0.6
+	github.com/ericlindev/outline-sdk/x v0.0.0-20230907224418-a5564f78bcef
 	github.com/wailsapp/wails/v2 v2.5.1
 	golang.org/x/mobile v0.0.0-20230905140555-fbe1c053b6a9
 )

@@ -17,7 +17,7 @@ package httpproxy
 import (
 	"net/http"
 
-	"github.com/Jigsaw-Code/outline-sdk/transport"
+	"github.com/ericlindev/outline-sdk/transport"
 )
 
 type ProxyHandler struct {

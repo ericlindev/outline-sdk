@@ -21,7 +21,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/Jigsaw-Code/outline-sdk/dns"
+	"github.com/ericlindev/outline-sdk/dns"
 	"golang.org/x/net/dns/dnsmessage"
 )
 

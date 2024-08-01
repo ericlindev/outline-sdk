@@ -30,10 +30,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Jigsaw-Code/outline-sdk/dns"
-	"github.com/Jigsaw-Code/outline-sdk/x/config"
-	"github.com/Jigsaw-Code/outline-sdk/x/connectivity"
-	"github.com/Jigsaw-Code/outline-sdk/x/report"
+	"github.com/ericlindev/outline-sdk/dns"
+	"github.com/ericlindev/outline-sdk/x/config"
+	"github.com/ericlindev/outline-sdk/x/connectivity"
+	"github.com/ericlindev/outline-sdk/x/report"
 )
 
 var debugLog log.Logger = *log.New(io.Discard, "", 0)

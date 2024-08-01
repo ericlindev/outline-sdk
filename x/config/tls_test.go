@@ -18,8 +18,8 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/Jigsaw-Code/outline-sdk/transport"
-	"github.com/Jigsaw-Code/outline-sdk/transport/tls"
+	"github.com/ericlindev/outline-sdk/transport"
+	"github.com/ericlindev/outline-sdk/transport/tls"
 	"github.com/stretchr/testify/require"
 )
 

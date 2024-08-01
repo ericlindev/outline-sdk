@@ -36,11 +36,11 @@ Each dialer configuration follows a URL format, where the scheme defines the typ
 
 # Proxy Protocols
 
-Shadowsocks proxy (compatible with Outline's access keys, package [github.com/Jigsaw-Code/outline-sdk/transport/shadowsocks])
+Shadowsocks proxy (compatible with Outline's access keys, package [github.com/ericlindev/outline-sdk/transport/shadowsocks])
 
 	ss://[USERINFO]@[HOST]:[PORT]?prefix=[PREFIX]
 
-SOCKS5 proxy (works with both stream and packet dialers, package [github.com/Jigsaw-Code/outline-sdk/transport/socks5])
+SOCKS5 proxy (works with both stream and packet dialers, package [github.com/ericlindev/outline-sdk/transport/socks5])
 
 	socks5://[USERINFO]@[HOST]:[PORT]
 
@@ -48,7 +48,7 @@ USERINFO field is optional and only required if username and password authentica
 
 # Transports
 
-TLS transport (currently streams only, package [github.com/Jigsaw-Code/outline-sdk/transport/tls])
+TLS transport (currently streams only, package [github.com/ericlindev/outline-sdk/transport/tls])
 
 The sni parameter defines the name to be sent in the TLS SNI. It can be empty.
 The certname parameter defines what name to validate against the server certificate.
@@ -61,14 +61,14 @@ WebSockets
 
 # DNS Protection
 
-DNS resolution (streams only, package [github.com/Jigsaw-Code/outline-sdk/dns])
+DNS resolution (streams only, package [github.com/ericlindev/outline-sdk/dns])
 
 It takes a host:port address. If the port is missing, it will use 53. The resulting dialer will use the input dialer with
 Happy Eyeballs to connect to the destination.
 
 	do53:address=[ADDRESS]
 
-DNS-over-HTTPS resolution (streams only, package [github.com/Jigsaw-Code/outline-sdk/dns])
+DNS-over-HTTPS resolution (streams only, package [github.com/ericlindev/outline-sdk/dns])
 
 It takes a host name and a host:port address. The name will be used in the SNI and Host header, while the address is used to connect
 to the DoH server. The address is optional, and will default to "[NAME]:443". The resulting dialer will use the input dialer with
@@ -89,17 +89,17 @@ The port parameter, if not empty, specifies the port to dial instead of the orig
 
 These strategies manipulate packets to bypass SNI-based blocking.
 
-Stream split transport (streams only, package [github.com/Jigsaw-Code/outline-sdk/transport/split])
+Stream split transport (streams only, package [github.com/ericlindev/outline-sdk/transport/split])
 
 It takes the length of the prefix. The stream will be split when PREFIX_LENGTH bytes are first written.
 
 	split:[PREFIX_LENGTH]
 
-TLS fragmentation (streams only, package [github.com/Jigsaw-Code/outline-sdk/transport/tlsfrag]).
+TLS fragmentation (streams only, package [github.com/ericlindev/outline-sdk/transport/tlsfrag]).
 
 The Client Hello record payload will be split into two fragments of size LENGTH and len(payload)-LENGTH if LENGTH>0.
 If LENGTH<0, the two fragments will be of size len(payload)-LENGTH and LENGTH respectively.
-For more details, refer to [github.com/Jigsaw-Code/outline-sdk/transport/tlsfrag].
+For more details, refer to [github.com/ericlindev/outline-sdk/transport/tlsfrag].
 
 	tlsfrag:[LENGTH]
 

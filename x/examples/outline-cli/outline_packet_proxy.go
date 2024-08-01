@@ -18,12 +18,12 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/Jigsaw-Code/outline-sdk/dns"
-	"github.com/Jigsaw-Code/outline-sdk/network"
-	"github.com/Jigsaw-Code/outline-sdk/network/dnstruncate"
-	"github.com/Jigsaw-Code/outline-sdk/transport"
-	"github.com/Jigsaw-Code/outline-sdk/x/config"
-	"github.com/Jigsaw-Code/outline-sdk/x/connectivity"
+	"github.com/ericlindev/outline-sdk/dns"
+	"github.com/ericlindev/outline-sdk/network"
+	"github.com/ericlindev/outline-sdk/network/dnstruncate"
+	"github.com/ericlindev/outline-sdk/transport"
+	"github.com/ericlindev/outline-sdk/x/config"
+	"github.com/ericlindev/outline-sdk/x/connectivity"
 )
 
 type outlinePacketProxy struct {

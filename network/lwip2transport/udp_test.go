@@ -20,7 +20,7 @@ import (
 	"net/netip"
 	"testing"
 
-	"github.com/Jigsaw-Code/outline-sdk/network"
+	"github.com/ericlindev/outline-sdk/network"
 	"github.com/stretchr/testify/require"
 )
 
