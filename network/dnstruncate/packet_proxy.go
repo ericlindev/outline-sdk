@@ -21,8 +21,8 @@ import (
 	"net/netip"
 	"sync/atomic"
 
-	"github.com/Jigsaw-Code/outline-sdk/internal/slicepool"
-	"github.com/Jigsaw-Code/outline-sdk/network"
+	"github.com/ericlindev/outline-sdk/internal/slicepool"
+	"github.com/ericlindev/outline-sdk/network"
 )
 
 // From [RFC 1035], the DNS message header contains the following fields:

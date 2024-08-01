@@ -19,7 +19,7 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/Jigsaw-Code/outline-sdk/network"
+	"github.com/ericlindev/outline-sdk/network"
 	lwip "github.com/eycorsican/go-tun2socks/core"
 )
 
